@@ -15,16 +15,34 @@ A versatile JavaScript hooks system inspired by WordPress, designed to add and r
 
 ## Installation
 
-You can include this library directly in your project by downloading the source code from this repository and adding it to your project.
+You can integrate this library into your project in several ways:
+
+### Direct Download
+
+Download the source code from this repository and include it in your project:
 
 ```html
 <script src="path/to/hooks.js"></script>
 ```
 
-Alternatively, you can use npm to install it:
+### CDN
+
+Include the library via a CDN for easy access and integration:
+
+```html
+<!-- Using jsDelivr CDN -->
+<script src="https://cdn.jsdelivr.net/gh/SneherAdor/js-hooks@1.0.1/dist/hooks.min.js"></script>
+
+<!-- OR, using unpkg CDN -->
+<script src="https://unpkg.com/@ahmillat/js-hooks@1.0.1/dist/hooks.js"></script>
+```
+
+### npm
+
+Alternatively, install the library via npm for easy management and updates:
 
 ```bash
-npm i @ahmillat/js-hooks
+npm install @ahmillat/js-hooks
 ```
 
 ## Usage
