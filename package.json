@@ -1,6 +1,6 @@
 {
-    "name": "js-hooks",
-    "version": "1.0.0",
+    "name": "@ahmillat/js-hooks",
+    "version": "1.0.1",
     "description": "A versatile JavaScript hooks system inspired by WordPress.",
     "main": "dist/hooks.js",
     "scripts": {
@@ -25,5 +25,9 @@
         "mocha": "^8.4.0",
         "webpack": "^5.0.0",
         "webpack-cli": "^4.0.0"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/SneherAdor/js-hooks/issues"
+    },
+    "homepage": "https://github.com/SneherAdor/js-hooks#readme"
 }

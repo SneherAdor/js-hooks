@@ -21,6 +21,12 @@ You can include this library directly in your project by downloading the source 
 <script src="path/to/hooks.js"></script>
 ```
 
+Alternatively, you can use npm to install it:
+
+```bash
+npm i @ahmillat/js-hooks
+```
+
 ## Usage
 
 Below is a basic example demonstrating how to use this library.
