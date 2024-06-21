@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Hooks Example</title>
+    <script src="../dist/hooks.min.js"></script>
+</head>
+<body>
+    <h1>JS Hooks Library Example</h1>
+    <script>
+        // Example usage of the JS Hooks library
+
+        // Add an action
+        addAction('my_action', function(options) {
+            console.log('my_action triggered!', options);
+        });
+
+        // Add another action with higher priority
+        addAction('my_action', function(options) {
+            console.log('my_action with higher priority', options);
+        }, 5);
+
+        // Execute the action
+        doAction('my_action', { key: 'value' });
+
+        // Add a filter
+        addFilter('my_filter', function(value, options) {
+            return value + ' filtered!';
+        });
+
+        // Apply the filter
+        let filteredValue = applyFilters('my_filter', 'This is a');
+        console.log(filteredValue);
+
+        // Check if actions or filters exist
+        console.log('Has my_action:', hasAction('my_action'));
+        console.log('Has my_filter:', hasFilter('my_filter'));
+
+        // Remove an action
+        removeAction('my_action', function(options) {
+            console.log('my_action triggered!', options);
+        });
+
+        // Remove a filter
+        removeFilter('my_filter', function(value, options) {
+            return value + ' filtered!';
+        });
+    </script>
+</body>
+</html>
